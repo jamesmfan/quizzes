@@ -1,2 +1,9 @@
 <h1>I love Dogs!</h1>
-<h1><%= @dog.inspect %></h1>
+
+<% @dog.each do |dog| %>
+<div>
+    <h2><%= dog.breed %></h2><br />
+  </div>
+
+   <hr />
+<% end %>
